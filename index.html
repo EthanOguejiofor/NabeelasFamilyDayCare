@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabeela's Family Daycare | Elkridge, MD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-amber-500 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-child text-white text-2xl"></i>
+                    <span class="text-white font-bold text-xl">Nabeela's Family Daycare</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-white hover:text-amber-100 transition-all">About</a>
+                    <a href="#programs" class="text-white hover:text-amber-100 transition-all">Programs</a>
+                    <a href="#features" class="text-white hover:text-amber-100 transition-all">Features</a>
+                    <a href="#contact" class="text-white hover:text-amber-100 transition-all">Contact</a>
+                </div>
+                <button class="md:hidden text-white" id="menu-toggle">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden mt-2" id="mobile-menu">
+                <a href="#about" class="block text-white py-2 hover:bg-amber-400 px-2 rounded">About</a>
+                <a href="#programs" class="block text-white py-2 hover:bg-amber-400 px-2 rounded">Programs</a>
+                <a href="#features" class="block text-white py-2 hover:bg-amber-400 px-2 rounded">Features</a>
+                <a href="#contact" class="block text-white py-2 hover:bg-amber-400 px-2 rounded">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero text-white py-20 md:py-32">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">A Nurturing "Home Away From Home"</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Providing loving, compassionate childcare in Elkridge, MD that helps children develop crucial skills for a successful future.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-full transition-all">Schedule a Visit</a>
+                <a href="tel:+16672174125" class="bg-white hover:bg-gray-100 text-amber-600 font-bold py-3 px-6 rounded-full transition-all">
+                    <i class="fas fa-phone mr-2"></i> (667) 217-4125
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Educational Approach</h2>
+                <div class="w-24 h-1 bg-amber-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-amber-50 p-6 rounded-lg shadow-md transition-all feature-card">
+                    <div class="text-amber-500 text-4xl mb-4">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Play & Nature-Based Learning</h3>
+                    <p class="text-gray-600">We provide a strong educational foundation through activities that encourage exploration and discovery in natural environments.</p>
+                </div>
+                
+                <div class="bg-amber-50 p-6 rounded-lg shadow-md transition-all feature-card">
+                    <div class="text-amber-500 text-4xl mb-4">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Culturally Diverse Environment</h3>
+                    <p class="text-gray-600">We foster inclusivity by offering programs in Hindu and Urdu, celebrating diversity and cultural understanding.</p>
+                </div>
+                
+                <div class="bg-amber-50 p-6 rounded-lg shadow-md transition-all feature-card">
+                    <div class="text-amber-500 text-4xl mb-4">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Holistic Development</h3>
+                    <p class="text-gray-600">Our program supports each child's optimal physical, intellectual, social, and emotional growth for well-rounded development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Childcare Services</h2>
+                <div class="w-24 h-1 bg-amber-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 border-b pb-2">Flexible Scheduling</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-amber-500 mt-1 mr-2"></i>
+                            <span>Part-time and full-time packages available</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-amber-500 mt-1 mr-2"></i>
+                            <span>Monday through Sunday availability</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-amber-500 mt-1 mr-2"></i>
+                            <span>7:30 AM to 5:30 PM operating hours</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 border-b pb-2">Additional Services</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-utensils text-amber-500 mt-1 mr-2"></i>
+                            <span>Optional meals provided</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-chart-line text-amber-500 mt-1 mr-2"></i>
+                            <span>Progress tracking through projects and events</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-calendar-alt text-amber-500 mt-1 mr-2"></i>
+                            <span>Holiday and seasonal celebration parties</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-white p-8 rounded-lg shadow-md max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/3 mb-6 md:mb-0 flex justify-center">
+                        <div class="w-32 h-32 rounded-full bg-amber-100 flex items-center justify-center">
+                            <i class="fas fa-user-graduate text-amber-500 text-5xl"></i>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 md:pl-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">About Nabeela</h3>
+                        <p class="text-gray-600 mb-4">With over 10 years of experience in childcare, Nabeela is certified in First Aid, CPR, and teaching. She creates a nurturing environment where children thrive through singing, dancing, and outdoor play.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm">First Aid Certified</span>
+                            <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm">CPR Certified</span>
+                            <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm">Teaching Certified</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Unique Features</h2>
+                <div class="w-24 h-1 bg-amber-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="border border-gray-200 rounded-lg p-6 hover:border-amber-300 transition-all feature-card">
+                    <div class="text-amber-500 text-3xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Safe & Secure Space</h3>
+                    <p class="text-gray-600">We provide a secure environment where children can learn and grow with peace of mind.</p>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg p-6 hover:border-amber-300 transition-all feature-card">
+                    <div class="text-amber-500 text-3xl mb-4">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Dedicated Learning Areas</h3>
+                    <p class="text-gray-600">Separate nap room, art area, and reading area foster a comfortable and engaging atmosphere.</p>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg p-6 hover:border-amber-300 transition-all feature-card">
+                    <div class="text-amber-500 text-3xl mb-4">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Outdoor Play Space</h3>
+                    <p class="text-gray-600">Children enjoy daily outdoor playtime in our backyard when weather permits.</p>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg p-6 hover:border-amber-300 transition-all feature-card">
+                    <div class="text-amber-500 text-3xl mb-4">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Prime Location</h3>
+                    <p class="text-gray-600">Situated in a quiet, family-oriented neighborhood near a park and elementary school.</p>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg p-6 hover:border-amber-300 transition-all feature-card">
+                    <div class="text-amber-500 text-3xl mb-4">
+                        <i class="fas fa-parking"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Convenient Parking</h3>
+                    <p class="text-gray-600">Driveway available for safe and easy drop-off and pick-up.</p>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg p-6 hover:border-amber-300 transition-all feature-card">
+                    <div class="text-amber-500 text-3xl mb-4">
+                        <i class="fas fa-wheelchair"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Accessibility</h3>
+                    <p class="text-gray-600">Wheelchair-accessible parking lot available for all families.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-amber-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">What Parents Say</h2>
+                <div class="w-24 h-1 bg-amber-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-500 text-2xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-4">"Nabeela's daycare has been a blessing for our family. Our daughter looks forward to going every day and has learned so much in the short time she's been there."</p>
+                    <div class="flex items-center">
+                        <div class="bg-gray-200 w-10 h-10 rounded-full mr-3"></div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Sarah K.</h4>
+                            <p class="text-sm text-gray-500">Parent since 2021</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-500 text-2xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-4">"The cultural diversity and language exposure at Nabeela's is unmatched. Our son is learning Urdu naturally while playing with his friends."</p>
+                    <div class="flex items-center">
+                        <div class="bg-gray-200 w-10 h-10 rounded-full mr-3"></div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Amit P.</h4>
+                            <p class="text-sm text-gray-500">Parent since 2020</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-500 text-2xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-4">"The progress reports and seasonal events help us stay connected to our child's development. We love seeing their artwork and performances!"</p>
+                    <div class="flex items-center">
+                        <div class="bg-gray-200 w-10 h-10 rounded-full mr-3"></div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Maria G.</h4>
+                            <p class="text-sm text-gray-500">Parent since 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-800 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
+                <div class="w-24 h-1 bg-amber-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Get in Touch</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="text-amber-400 text-xl mt-1 mr-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Address</h4>
+                                <p>7003 Oak Grove Way, Elkridge, MD 21075</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-amber-400 text-xl mt-1 mr-4">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Phone</h4>
+                                <p>+1 (667) 217-4125</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="text-amber-400 text-xl mt-1 mr-4">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Hours</h4>
+                                <p>Monday - Sunday: 7:30 AM - 5:30 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-bold mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-gray-700 hover:bg-amber-500 w-10 h-10 rounded-full flex items-center justify-center transition-all">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="bg-gray-700 hover:bg-amber-500 w-10 h-10 rounded-full flex items-center justify-center transition-all">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Schedule a Visit</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block mb-1">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:border-amber-500 focus:outline-none">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block mb-1">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:border-amber-500 focus:outline-none">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block mb-1">Phone</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:border-amber-500 focus:outline-none">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block mb-1">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 rounded bg-gray-700 border border-gray-600 focus:border-amber-500 focus:outline-none"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-6 rounded transition-all w-full">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="h-96 bg-gray-200">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3089.20300616205!2d-76.7490159240103!3d39.21297137172143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7e0c0c8e1c4a5%3A0x8a1b9b9b9b9b9b9b!2s7003%20Oak%20Grove%20Way%2C%20Elkridge%2C%20MD%2021075!5e0!3m2!1sen!2sus!4v1689876543210!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-child text-amber-500 text-2xl"></i>
+                        <span class="font-bold text-xl">Nabeela's Family Daycare</span>
+                    </div>
+                    <p class="text-gray-400 mt-2">A nurturing "home away from home" in Elkridge, MD</p>
+                </div>
+                
+                <div class="text-gray-400 text-sm">
+                    <p>&copy; 2023 Nabeela's Family Daycare. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
